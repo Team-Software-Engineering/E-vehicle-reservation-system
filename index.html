@@ -59,7 +59,10 @@ body { margin: 0; padding: 0; }
         
         const distance = parseFloat(dvalue);
         console.log(distance);
+        const cost = Math.round(distance*20);
+        alert("COST: " + cost + " Rs");
     }
+
 </script>
 
 <button onclick="getData()" style="position: absolute; top: 40px; left: 350px; z-index: 1;"> Click Me </button>
