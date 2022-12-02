@@ -3,36 +3,35 @@
 <head>
   <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-<br>
-<br>
+    <br><br>
     <div class="cont">
         <div class="form sign-in">
-            <h2>Welcome</h2>
+            <h2>Sign In!</h2>
             <label>
                 <span>Email</span>
-                <input type="email" />
+                <input type="email" id="lemail"/>
             </label>
             <label>
                 <span>Password</span>
-                <input type="password" />
+                <input type="password" id="lpwd" />
             </label>
             <p class="forgot-pass">Forgot password?</p>
-            <a href="../E-vehicle-reservation-system/index.html">
-            <button type="button" class="submit">Sign In</button>
+            <button type="button" class="submit" onclick="login()" id="signin">Sign In</button>
             </a>
         
-         
+        
         </div>
         <div class="sub-cont">
             <div class="img">
                 <div class="img__text m--up">
-                 
-                    <h3>Don't have an account? Please Sign up!<h3>
+                    <h3>Don't have an account?<h3>
+                    <h3>Signup Here!</h3>
                 </div>
                 <div class="img__text m--in">
                 
-                    <h3>If you already has an account, just sign in.<h3>
+                    <h3>If you already have an account, just sign in.<h3>
                 </div>
                 <div class="img__btn">
                     <span class="m--up">Sign Up</span>
@@ -43,24 +42,30 @@
                 <h2>Create your Account</h2>
                 <label>
                     <span>Name</span>
-                    <input type="text" />
+                    <input type="text" id="nameSU"/>
                 </label>
                 <label>
                     <span>Email</span>
-                    <input type="email" />
+                    <input type="email" id="remail"/>
                 </label>
                 <label>
                     <span>Password</span>
-                    <input type="password" />
+                    <input type="password" id="rpwd" />
                 </label>
-                <button type="button" class="submit">Sign Up</button>
+                <button type="button" class="submit" onclick="register()" id="signup">Sign Up</button>
                 
             </div>
         </div>
     </div>
+    </body>
+        <script>
+            document.querySelector('.img__btn').addEventListener('click', function() {
+                document.querySelector('.cont').classList.toggle('s--signup');
+            });
+        </script>
 
-    <script>
-        document.querySelector('.img__btn').addEventListener('click', function() {
-            document.querySelector('.cont').classList.toggle('s--signup');
-        });
-    </script>
+        <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
+        <script src="login.js"></script>
+    </html>
