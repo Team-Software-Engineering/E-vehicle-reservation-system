@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Display navigation directions</title>
+<title>Route Select</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
@@ -52,6 +52,10 @@ body { margin: 0; padding: 0; }
         const value = text.split(" ");
         console.log(value);
 
+        //Arrival & Destination
+        console.log(document.getElementById('mapbox-directions-origin-input').getElementsByClassName('mapboxgl-ctrl-geocoder')[0].getElementsByTagName('input')[0].value);
+        console.log(document.getElementById('mapbox-directions-destination-input').getElementsByClassName('mapboxgl-ctrl-geocoder')[0].getElementsByTagName('input')[0].value);
+
         dvalue = '';
         for(i=0; i<value[0].length; i++){
             if( value[0][i] == '.' || ('0'<=value[0][i] && value[0][i] <= '9')) dvalue += value[0][i];
@@ -65,6 +69,10 @@ body { margin: 0; padding: 0; }
 
 </script>
 
-<button onclick="getData()" style="position: absolute; top: 40px; left: 350px; z-index: 1;"> Click Me </button>
+    <button onclick="getData()" style="position: absolute; top: 40px; left: 350px; z-index: 1;"> Click Me </button>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
