@@ -8,8 +8,16 @@
 
 body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    background: rgb(48, 44, 44);
-}
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./images/taxi-out-from-phone-booking-online-taxi-service-graphic-design-vector-illustration_620585-19.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100vw;
+ }
 
 input,
 button {
@@ -30,12 +38,12 @@ button {
     overflow: hidden;
     position: relative;
     padding-top:40px ;
-    width: 900px;
+    width: 800px;
     height: 550px;
-    padding: 40px 0;
-    margin: 0 auto 300px;
-    margin-top: 40px;
-    background: #fff;
+    padding: 50px 0;
+    background: transparent;
+    opacity: 100%;
+;
     box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.3), 10px 10px 15px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(255, 255, 255, 0.3), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
 }
 
@@ -47,7 +55,7 @@ button {
     transition: -webkit-transform 1.2s ease-in-out;
     transition: transform 1.2s ease-in-out;
     transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
-    padding: 50px 30px 0;
+    padding: 40px 30px 0;
 }
 
 .sub-cont {
@@ -55,10 +63,10 @@ button {
     position: absolute;
     left: 640px;
     top: 0;
-    width: 900px;
+    width: 1500px;
     height: 100%;
-    padding-left: 260px;
-    background: #fff;
+    padding-left: 160px;
+    background: transparent;
     -webkit-transition: -webkit-transform 1.2s ease-in-out;
     transition: -webkit-transform 1.2s ease-in-out;
     transition: transform 1.2s ease-in-out;
@@ -87,7 +95,7 @@ button {
     position: absolute;
     left: 0;
     top: 0;
-    width: 260px;
+    width: 160px;
     height: 100%;
     padding-top: 360px;
 }
@@ -112,7 +120,7 @@ button {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 400%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
 }
@@ -130,7 +138,7 @@ button {
     width: 100%;
     padding: 0 20px;
     text-align: center;
-    color: #fff;
+    color: white;
     -webkit-transition: -webkit-transform 1.2s ease-in-out;
     transition: -webkit-transform 1.2s ease-in-out;
     transition: transform 1.2s ease-in-out;
@@ -138,7 +146,7 @@ button {
 }
 
 .img__text h2 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-weight: normal;
 }
 
@@ -223,20 +231,22 @@ button {
 
 h2 {
     width: 100%;
-    font-size: 26px;
+    font-size: 40px;
     text-align: center;
+    color: #455a81;
 }
 
 label {
     display: block;
+    font-size: 30px ;
     width: 260px;
     margin: 25px auto 0;
     text-align: center;
 }
 
 label span {
-    font-size: 12px;
-    color: blue;
+    font-size: 25px;
+    color: black;
     text-transform: uppercase;
 }
 
@@ -245,7 +255,7 @@ input {
     width: 100%;
     margin-top: 5px;
     padding-bottom: 5px;
-    font-size: 16px;
+    font-size: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     text-align: center;
 }
@@ -253,7 +263,8 @@ input {
 .forgot-pass {
     margin-top: 15px;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
+    font-style: bold;
     color: black;
 }
 
@@ -265,7 +276,7 @@ input {
 }
 
 .fb-btn {
-    border: 2px solid #d3dae9;
+    border: 3px solid #d3dae9;
     color: #8fa1c7;
 }
 
