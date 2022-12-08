@@ -65,11 +65,12 @@ body { margin: 0; padding: 0; }
         console.log(distance);
         const cost = Math.round(distance*20);
         alert("COST: " + cost + " Rs");
+        window.location.href = "paymentsReciept.html";
     }
 
 </script>
 
-    <button onclick="getData()" style="position: absolute; top: 40px; left: 350px; z-index: 1;"> Click Me </button>
+    <button onclick="getData()" style="position: absolute; top: 40px; left: 350px; z-index: 1;"> Book Ride </button>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
